@@ -5,15 +5,23 @@
 	<meta content="width=device-width, initial-scale=1.0" name="viewport">
 	<meta content="ie=edge" http-equiv="X-UA-Compatible">
 	<title>Weather App</title>
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"><!--REQUIREMENTS
-        Page requires a key.js file with the following format 
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<link href="style.css" rel="stylesheet">
+	<!--REQUIREMENTS
+  	    Page requires a key.js file with the following format 
         var APIKEY="apikey from openweathermap.org" -->
 </head>
 <body>
-	<h1>Weather App</h1>
-	<div id="data">
-		<p id="weather"></p>
-	</div>
+	<h1>Local Weather Today At :</h1>
+	<div>
+		<h2 id ="location"></h2>
+		<p>Weather : <p id="weather"></p><img id ="icon"></p>
+		<p id='weatherdes'></p>
+        <p>Temperature : </p>
+        <button id = "temp"></button>
+        <!--<button id ="function">Temperature in &#8457</button>--> 
+        <p id="demo"></p>
+    </div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	</script> 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
