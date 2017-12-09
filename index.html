@@ -6,22 +6,30 @@
 	<meta content="ie=edge" http-equiv="X-UA-Compatible">
 	<title>Weather App</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<link href="style.css" rel="stylesheet">
-	<!--REQUIREMENTS
-  	    Page requires a key.js file with the following format 
+	<link href="style.css" rel="stylesheet"><!--REQUIREMENTS
+        Page requires a key.js file with the following format 
         var APIKEY="apikey from openweathermap.org" -->
 </head>
 <body>
-	<h1>Local Weather Today At :</h1>
-	<div>
-		<h2 id ="location"></h2>
-		<p>Weather : <p id="weather"></p><img id ="icon"></p>
-		<p id='weatherdes'></p>
-        <p>Temperature : </p>
-        <button id = "temp"></button>
-        <!--<button id ="function">Temperature in &#8457</button>--> 
-        <p id="demo"></p>
-    </div>
+	<div class="container-fluid text-center">
+		<h1>Local Weather <i class="glyphicon glyphicon-cloud">Report</i></h1><br>
+		<br>
+		<h2>Today's Weather At</h2><br>
+		<h2 id="location"></h2><img id="icon"><br>
+		<br>
+		<div>
+			<ul class="list-inline">
+				<li>Weather</li>
+				<li style="list-style: none"><button class="button" id="weather"></button></li>
+				<li>Description</li>
+				<li style="list-style: none"><button class="button" id="weatherdes"></button></li>
+				<li>Wind Speed</li>
+				<li style="list-style: none"><button class="button" id="windspeed"></button></li>
+				<li>Temperature</li>
+				<li style="list-style: none"><input id="temptype" type="hidden" value="C"> <button class="button" id="temp" value='celsius'></button></li>
+			</ul>
+		</div>
+	</div>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
 	</script> 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">
