@@ -18,7 +18,8 @@ $(document).ready(function() {
 					document.getElementById('location').innerHTML = data.name;
 					document.getElementById('weather').innerHTML = data.weather[0].main;
 					document.getElementById('weatherdes').innerHTML = data.weather[0].description;
-					document.getElementById('windspeed').innerHTML = data.wind.speed;
+					var wspeed = data.wind.speed * 2.23694;
+					document.getElementById('windspeed').innerHTML = wspeed.toFixed(2) + " mph";
 					document.getElementById('icon').src = "https://openweathermap.org/img/w/" + data.weather[0].icon + ".png";
 					document.getElementById('temp').innerHTML = data.main.temp + "&#8451";
 					$('#temp').click(function() {
